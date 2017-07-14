@@ -1,30 +1,13 @@
-def draw arr
-    return arr.sample(2)
-end
+def rps(p1,p2)   
+    if p1=='rock' && p2=='scissors' || p1=='paper' && p2=='rock' || p1=='scissors' && p2=='paper'
+            return 'Player 1 won!'
 
-def result
-    array=["rock","paper","scissor","rock","paper","scissor"]
-    draws=draw(array)
-    print draws
+        elsif p1=='rock' && p2=='paper' || p1=='paper' && p2=='scissors' || p1=='scissors' && p2=='rock'
+            return 'Player 2 won!'
+
+        elsif p1==p2
+            return 'Draw!'
     
-    if draws[0]=="rock" && draws[1]=="paper"
-        puts "player 2 wins"
-        elsif draws[0]=="rock" && draws[1]=="scissor"
-            puts "player 1 wins"
-        elsif draws[0]=="rock" && draws[1]=="rock"
-            puts "draw"
-        elsif draws[0]=="paper" && draws[1]=="rock"
-            puts "player 1 wins"
-        elsif draws[0]=="paper" && draws[1]=="scissor"
-            puts "player 2 wins"
-        elsif draws[0]=="paper" && draws[1]=="paper"
-            puts "draw"
-        elsif draws[0]=="scissor" && draws[1]=="rock"
-            puts "player 2 wins"
-        elsif draws[0]=="scissor" && draws[1]=="paper"
-            puts "player 1 wins"
-        elsif   draws[0]=="scissor" && draws[1]=="scissor"
-            puts "draw"
     end
 end
-result
+# puts rps('rock','rock')

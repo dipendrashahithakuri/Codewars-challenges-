@@ -1,31 +1,21 @@
-puts "Enter your bill Amount"
-amo=gets.chomp.to_f
-puts "Give Your Rating"
-rat=gets.chomp.downcase
-
-def calculate(amount,rating)
-
-    print "You Gave '#{rating}' Rating so, "
-
-    case rating
+def calculate_tip(amount,rating)
+    rate=rating.downcase
+    case rate
         when "terrible"
-            puts "You need to tip 0.00"
+            return 0
         when "poor"
-            tip = amount*0.05
-            puts "You need to tip #{tip}"  
+              return (amount*0.05).ceil
+              
         when "good"
-            tip = amount*0.1
-            puts "You need to tip #{tip}" 
+              return (amount*0.1).ceil
+             
         when "great"
-            tip = amount*0.15
-            puts "You need to tip #{tip}" 
+              return (amount*0.15).ceil
+             
         when "excellent"
-            tip = amount*0.2
-            puts "You need to tip #{tip}"
+              return (amount*0.2).ceil
+            
         else
-            puts "Please give a valit rating"
+            "Rating not recognised"
     end
-        
 end
-
-calculate(amo,rat)
