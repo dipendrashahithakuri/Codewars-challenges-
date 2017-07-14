@@ -5,5 +5,6 @@ def calc_mean(ary)
     0
   else
     # Your code goes here 
+    return (arry.inject(0,:+)/aty.length)
   end
 end
