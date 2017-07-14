@@ -1,14 +1,14 @@
 def grader(score)
     if(score>=0.9)
-        puts 'A'
+        return 'A'
         elsif(score>=0.8)
-            puts 'B'
+            return 'B'
         elsif(score>=0.7)
-            puts 'C'
+            return 'C'
         elsif(score>=0.6)
-            puts 'D'
+            return 'D'
         else
-            puts 'F'
+            return 'F'
     end
 end
-grader(1)
+# grader(0.7)

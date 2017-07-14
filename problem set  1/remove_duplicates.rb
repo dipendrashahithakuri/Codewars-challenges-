@@ -1,6 +1,6 @@
-array=[]
-puts "Enter numbers for array :"
-array=gets.chomp.split()
+# array=[]
+# puts "Enter numbers for array :"
+# array=gets.chomp.split()
 
 def unique a
     i=0
@@ -19,7 +19,7 @@ def unique a
         end
         i+=1
     end
-print a
+return a
 end
 
-unique(array)
+# unique(array)
