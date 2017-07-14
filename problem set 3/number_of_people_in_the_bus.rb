@@ -1,5 +1,3 @@
-a=[[10,20],[3,4,],[5,6],[7,8],[9,10]]
-
 def numbers(bus_stops)
     i=0
     u=[]
@@ -21,6 +19,6 @@ def numbers(bus_stops)
     sum_down = d.inject(0,:+)
 
     remaining_people = sum_up - sum_down
-    puts remaining_people
+    return remaining_people
 end
-numbers(a)
+# numbers([[10, 0], [3, 5], [5, 8]])
